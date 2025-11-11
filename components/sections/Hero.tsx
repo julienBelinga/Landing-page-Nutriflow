@@ -104,13 +104,25 @@ export function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-[#A8E063]/20 to-[#C9A9FF]/20 blur-3xl rounded-full" />
 
-            <div className="relative w-[300px] h-auto">
-              <img
-                src="/assets/img/screenshot.jpeg"
-                alt="NutriFlow App Screenshot"
-                className="w-full h-auto rounded-[3rem] shadow-2xl"
-                draggable={false}
-              />
+            {/* iPhone 16 Pro Frame */}
+            <div className="relative w-[320px] h-[660px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3.5rem] shadow-2xl p-3">
+              {/* Boutons volume (gauche) */}
+              <div className="absolute left-0 top-[120px] w-1 h-[30px] bg-gray-700 rounded-r-sm" />
+              <div className="absolute left-0 top-[165px] w-1 h-[60px] bg-gray-700 rounded-r-sm" />
+              <div className="absolute left-0 top-[238px] w-1 h-[60px] bg-gray-700 rounded-r-sm" />
+
+              {/* Bouton power (droite) */}
+              <div className="absolute right-0 top-[180px] w-1 h-[80px] bg-gray-700 rounded-l-sm" />
+
+              {/* Écran */}
+              <div className="relative w-full h-full bg-white rounded-[3rem] overflow-hidden">
+                <img
+                  src="/assets/img/screenshot.jpeg"
+                  alt="NutriFlow App Screenshot"
+                  className="w-full h-full object-cover"
+                  draggable={false}
+                />
+              </div>
             </div>
           </div>
 
