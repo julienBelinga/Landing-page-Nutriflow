@@ -43,7 +43,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-[#FAFAFA] to-white">
+    <section id="features" className="py-24 px-4 bg-gradient-to-b from-[#FAFAFA] to-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
           <div className="inline-block px-4 py-2 bg-white rounded-full shadow-sm border border-[#E5E5E5]">
