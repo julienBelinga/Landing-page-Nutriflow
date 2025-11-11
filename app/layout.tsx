@@ -1,12 +1,18 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'NutriFlow - Tracking de calories par IA',
-  description: 'L\'application de tracking de calories intelligente qui utilise l\'IA pour analyser vos repas et vous accompagner vers vos objectifs nutritionnels.',
+  title: "NutriFlow - Tracking de calories par IA",
+  description:
+    "L'application de tracking de calories intelligente qui utilise l'IA pour analyser vos repas et vous accompagner vers vos objectifs nutritionnels.",
+  icons: {
+    icon: "/assets/img/logo.png",
+    shortcut: "/assets/img/logo.png",
+    apple: "/assets/img/logo.png",
+  },
 };
 
 export default function RootLayout({
