@@ -25,25 +25,7 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-[#2E2E2E] mb-4">Produit</h4>
             <ul className="space-y-3">
-              {["Fonctionnalités", "Tarifs", "Démo", "Télécharger"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="text-[#707070] hover:text-[#A8E063] transition-colors"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold text-[#2E2E2E] mb-4">Entreprise</h4>
-            <ul className="space-y-3">
-              {["À propos", "Blog", "Carrières", "Contact"].map((item) => (
+              {["Fonctionnalités", "Tarifs", "Télécharger"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -57,20 +39,47 @@ export function Footer() {
           </div>
 
           <div>
+            <h4 className="font-bold text-[#2E2E2E] mb-4">Communauté</h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="/feature-request"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Suggérer une fonctionnalité
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/support"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h4 className="font-bold text-[#2E2E2E] mb-4">Légal</h4>
             <ul className="space-y-3">
-              {["Confidentialité", "CGU", "Cookies", "Mentions légales"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="text-[#707070] hover:text-[#A8E063] transition-colors"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              <li>
+                <a
+                  href="/privacy-policy"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Confidentialité
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/delete-account"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Supprimer mon compte
+                </a>
+              </li>
             </ul>
           </div>
         </div>
