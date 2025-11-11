@@ -13,9 +13,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <a
+              href="/"
+              className="flex items-center gap-2 w-fit cursor-pointer"
+            >
               <Image src={logo} alt="NutriFlow" width={32} height={32} />
-            </div>
+            </a>
             <p className="text-[#707070]">
               L'application de tracking de calories intelligente qui vous
               accompagne vers une meilleure santé.
@@ -25,16 +28,30 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-[#2E2E2E] mb-4">Produit</h4>
             <ul className="space-y-3">
-              {["Fonctionnalités", "Tarifs", "Télécharger"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-[#707070] hover:text-[#A8E063] transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/#features"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Fonctionnalités
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#pricing"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Tarifs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#hero"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Télécharger
+                </a>
+              </li>
             </ul>
           </div>
 

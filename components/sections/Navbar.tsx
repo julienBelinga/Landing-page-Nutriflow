@@ -35,10 +35,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div
-            className="flex items-center gap-3 cursor-pointer"
-            onClick={() => scrollToSection("hero")}
-          >
+          <a href="/" className="flex items-center gap-3 cursor-pointer">
             <Image
               src="/assets/img/logo.png"
               alt="NutriFlow Logo"
@@ -47,7 +44,7 @@ export function Navbar() {
               className="w-10 h-10"
             />
             <span className="text-2xl font-bold text-[#2E2E2E]">NutriFlow</span>
-          </div>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
@@ -63,12 +60,12 @@ export function Navbar() {
             >
               Tarifs
             </button>
-            <button
-              onClick={() => scrollToSection("footer")}
+            <a
+              href="/support"
               className="text-[#707070] hover:text-[#2E2E2E] font-medium transition-colors"
             >
               Contact
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,12 +97,13 @@ export function Navbar() {
               >
                 Tarifs
               </button>
-              <button
-                onClick={() => scrollToSection("footer")}
-                className="text-[#707070] hover:text-[#2E2E2E] font-medium transition-colors text-left py-2"
+              <a
+                href="/support"
+                className="text-[#707070] hover:text-[#2E2E2E] font-medium transition-colors text-left py-2 block"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
-              </button>
+              </a>
               <div className="pt-4 border-t border-[#E5E5E5] space-y-3">
                 <Button
                   variant="ghost"
