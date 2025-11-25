@@ -244,10 +244,10 @@ export default function PrivacyPolicyPage() {
                 <p className="mt-4">
                   Pour exercer ces droits, contactez-nous à{" "}
                   <a
-                    href="mailto:privacy@nutriflow.app"
+                    href="mailto:support@nutriflow.app"
                     className="text-[#A8E063] hover:underline font-medium"
                   >
-                    privacy@nutriflow.app
+                    support@nutriflow.app
                   </a>
                 </p>
               </div>
@@ -380,10 +380,10 @@ export default function PrivacyPolicyPage() {
                   <p>
                     <strong>Email :</strong>{" "}
                     <a
-                      href="mailto:privacy@nutriflow.app"
+                      href="mailto:support@nutriflow.app"
                       className="text-[#7BC041] hover:underline"
                     >
-                      privacy@nutriflow.app
+                      support@nutriflow.app
                     </a>
                   </p>
                 </div>

@@ -507,10 +507,10 @@ export default function TermsOfServicePage() {
                   <p>
                     <strong>Email :</strong>{" "}
                     <a
-                      href="mailto:legal@nutriflow.app"
+                      href="mailto:support@nutriflow.app"
                       className="text-[#7BC041] hover:underline"
                     >
-                      legal@nutriflow.app
+                      support@nutriflow.app
                     </a>
                   </p>
                 </div>
