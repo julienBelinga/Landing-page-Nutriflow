@@ -91,6 +91,15 @@ export function Footer() {
 
               <li>
                 <a
+                  href="/terms"
+                  className="text-[#707070] hover:text-[#A8E063] transition-colors"
+                >
+                  Conditions d'utilisation
+                </a>
+              </li>
+
+              <li>
+                <a
                   href="/delete-account"
                   className="text-[#707070] hover:text-[#A8E063] transition-colors"
                 >
